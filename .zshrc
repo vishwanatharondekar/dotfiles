@@ -13,7 +13,7 @@ alias hpr="hub pull-request"
 alias hb='hub browse'
 
 alias m="wd m"
-alias gb="git for-each-ref --sort='-committerdate' --format='%(refname:short)|%(committerdate:relative)' refs/heads | sed -e 's-refs/heads/--' | column -s '|' -t"
+alias gb="git for-each-ref --sort='-committerdate' --format='%(refname:short)|%(committerdate:relative)' refs/heads | sed -e 's-refs/heads/--' | column -s '|' -t | head -20"
 
 alias ggpush='git push origin "$(git_current_branch)" -u'
 
